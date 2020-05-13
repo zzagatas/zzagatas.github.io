@@ -10,7 +10,6 @@
 
 /* breakpoint in pixels for responsive */
 
-$breakpoint: 980px;
 
 /* dropdown Menu core scss */
 
@@ -52,49 +51,6 @@ ul {
 
 /* Responsiveness core scss */
 
-@media (max-width: $breakpoint) {
-  ul {
-    display: inherit;
-    &:first-child:before {
-      background-color: #222;
-      content: 'MENU';
-      display: block;
-      padding: 1rem;
-      color: #fff;
-      text-align: right;
-    }
-    &:active,
-    &:focus,
-    &:hover {
-      li {
-        display: list-item;
-      }
-    }
-    li {
-      display: none;
-      background-color: #aaa;
-      ul {
-        position: relative;
-        min-width: auto;
-        display: inherit;
-        border-top: 2px solid #999;
-        li {
-          display: block;
-          a {
-            position: relative;
-            &:before {
-              content: '';
-              padding-left: 1.5%;
-            }
-          }
-          ul {
-            left: 0;
-          }
-        }
-      }
-    }
-  }
-}
 
 
 /* ------------- optional styling below ------------ */
