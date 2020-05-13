@@ -7,119 +7,200 @@
 </head>
 
 <style>
-$min-width: 120px;
-$maincolor: #6BBE92;  
-$secondarycolor: #3E8760;
 
-@mixin transform($value){
-  -webkit-transform: ($value);
-     -moz-transform: ($value);
-      -ms-transform: ($value);
-          transform: ($value);
-}
-@mixin transition($value){
-  -webkit-transition: ($value);
-     -moz-transition: ($value);
-      -ms-transition: ($value);
-          transition: ($value);
-}
+/* breakpoint in pixels for responsive */
 
-*{
-  box-sizing: border-box;
-}
-body{
-  font-family: 'Open Sans', sans-serif;
-  background: #374954;
-  color: white;
-  text-align: center;
-}
+$breakpoint: 980px;
 
-#main{
-  position: relative;
-  list-style: none;
-  background: $maincolor;
-  font-weight: 400;
-  font-size: 0;
-  text-transform: uppercase;
+/* dropdown Menu core scss */
+
+ul {
   display: inline-block;
-  padding: 0;
-  margin: 50px auto;
-  li{
-    font-size: 0.8rem;
-    display: inline-block;
-    position: relative;
-    padding: 15px 20px;
-    cursor: pointer;
-    z-index: 5;
-    min-width: $min-width;
-  }  
-}
-li{
+  list-style: none;
   margin: 0;
-}
-.drop{
-    overflow: hidden;
-    list-style: none;
-    position: absolute;
-    padding: 0;
-    width: 100%;
-    left: 0;
-    top: 48px;
-    div{
-      @include transform(translate(0,-100%));
-      @include transition(all 0.5s 0.1s);
-      position: relative;
+  padding: 0;
+  z-index: 100;
+  li {
+    position: relative;
+    display: inline-block;
+    &:hover {
+      > ul {
+        display: inherit;
+        li {
+          display: list-item;
+        }
+      }
     }
-    li{
-      display:block;
-      padding: 0;
-      width: 100%;
-      background: $secondarycolor !important;
+    a {
+      display: block;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      /* optional: submenu is same width than parent entry width */
+      min-width: 100%;
+      /* optional: submenu background color */
+      background-color: #aaa;
+      ul {
+        left: 100%;
+        top: 0;
+      }
     }
   }
-#marker{
-  height: 6px;
-  background: $secondarycolor !important;
-  position: absolute;
-  bottom: 0;
-  width: $min-width;
-  z-index: 2;
-  @include transition(all 0.35s);
 }
 
-@for $i from 1 through 4{
-  #main li:nth-child(#{$i}){
-    &:hover ul div{
-     @include transform(translate(0,0)); 
+
+/* Responsiveness core scss */
+
+@media (max-width: $breakpoint) {
+  ul {
+    display: inherit;
+    &:first-child:before {
+      background-color: #222;
+      content: 'MENU';
+      display: block;
+      padding: 1rem;
+      color: #fff;
+      text-align: right;
     }
-    &:hover ~ #marker{
-      @include transform(translate(#{(-1+$i)*$min-width},0));
+    &:active,
+    &:focus,
+    &:hover {
+      li {
+        display: list-item;
+      }
     }
-  }    
+    li {
+      display: none;
+      background-color: #aaa;
+      ul {
+        position: relative;
+        min-width: auto;
+        display: inherit;
+        border-top: 2px solid #999;
+        li {
+          display: block;
+          a {
+            position: relative;
+            &:before {
+              content: '';
+              padding-left: 1.5%;
+            }
+          }
+          ul {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
+
+/* ------------- optional styling below ------------ */
+
+
+/* Following declarations are OPTIONAL */
+
+body {
+  background-color: #ddd;
+  font-family: Arial;
+}
+
+html,
+body {
+  margin: 25px;
+}
+body {
+  overflow-Y: scroll;
+}
+
+nav {
+  background-color: #333;
+  margin-bottom: 50px;
+  ul {
+    li {
+      &:hover {
+        background-color: #888;
+      }
+    }
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+li > a:after {
+  content: ' +';
+  float: right;
+  margin-left: 5px;
+}
+
+li > a:only-child:after {
+  content: '';
+}
+
+div {
+  font-size: 2rem;
+  h1 {
+    border-left: 7.5px solid #bbb;
+    font-size: 2rem;
+    padding-left: 15px;
+    display: inline-block;
+    font-weight: 100;
+  }
+  div {
+    font-size: 1rem;
+    padding-left: 15+7.5px;
+    font-style: italic;
+    color: #666;
+    a {
+      color: #333;
+      padding: 0;
+      text-decoration: underline;
+    }
+  }
+}
 
 
 </style>
 
 
 <body>
-
 <nav>
-  <ul id="main">
-    <li>Home</li>
-    <li>About</li>
-    <li>Skills
-      <ul class="drop">
-        <div>
-        <li>scss</li>
-        <li>jquery</li>
-        <li>html</li>
-        </div>
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Articles</a>
+      <ul>
+        <li><a href="">CSS</a></li>
+        <li><a href="">WooCommerce</a></li>
+        <li><a href="">WordPress</a>
+          <ul>
+            <li><a href="">Entry 1</a></li>
+            <li><a href="">Entry 2</a>
+              <ul>
+                <li><a href="">Sub Entry 1</a></li>
+                <li><a href="">Sub Entry 2</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">PHP</a></li>
       </ul>
     </li>
-    <li>Contact</li>
-    <div id="marker"></div>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Find us</a>
+      <ul>
+        <li><a href="">Item 1</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
