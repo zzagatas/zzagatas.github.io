@@ -14,6 +14,23 @@ h1 {
     margin: 40px 0 40px;
     text-align: center;}
 
+h2 { color: #323232; 
+	font-family: 'helvetica neue', sans-serif; 
+	font-size: 75px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 1; 
+	text-align: center; }
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Futura',cursive;
+    font-size: 16px;
+}
 
 a:link {
   text-decoration: none;
