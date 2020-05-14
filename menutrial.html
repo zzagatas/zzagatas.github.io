@@ -29,23 +29,13 @@ body {
     </head>
 
 <style>
-    h1 { 
-                color: rgb(204, 0, 0);
-                font-family: futura;
-  font-weight: 400;
-  text-align: center;
-    margin: 40px 0 40px;
-    text-align: center;}
-
-
-
-nav {
+  nav {
     margin: 27px auto 0;
 
     position: relative;
     width: 590px;
     height: 50px;
-    background-color: #34495e;
+    background-color: #fbfbfb;
     border-radius: 8px;
     font-size: 0;
 }
@@ -53,13 +43,14 @@ nav a {
     line-height: 50px;
     height: 100%;
     font-size: 15px;
+    font-family: Futura;
     display: inline-block;
     position: relative;
     z-index: 1;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    color: white;
+    color: #2b2b2b;
     cursor: pointer;
 }
 nav .animation {
@@ -67,7 +58,7 @@ nav .animation {
     height: 100%;
     top: 0;
     z-index: 0;
-    transition: all .5s ease 0s;
+    transition: linear 0.5s ease 0s;
     border-radius: 8px;
 }
 a:nth-child(1) {
@@ -88,44 +79,53 @@ a:nth-child(5) {
 nav .start-home, a:nth-child(1):hover~.animation {
     width: 100px;
     left: 0;
-    background-color: #1abc9c;
+    background-color: rgb(204, 0, 0);
 }
 nav .start-about, a:nth-child(2):hover~.animation {
     width: 110px;
     left: 100px;
-    background-color: #e74c3c;
+    background-color: rgb(204, 0, 0);
 }
 nav .start-blog, a:nth-child(3):hover~.animation {
     width: 100px;
     left: 210px;
-    background-color: #3498db;
+    background-color: rgb(204, 0, 0);
 }
 nav .start-portefolio, a:nth-child(4):hover~.animation {
     width: 160px;
     left: 310px;
-    background-color: #9b59b6;
+    background-color: rgb(204, 0, 0);
 }
 nav .start-contact, a:nth-child(5):hover~.animation {
     width: 120px;
     left: 470px;
-    background-color: #e67e22;
+    background-color: rgb(204, 0, 0);
 }
 
 body {
     font-size: 12px;
     font-family: sans-serif;
     background: #2b2b2b;
+   
 }
+ h1 { 
+                color: rgb(204, 0, 0);
+                font-family: futura;
+  font-weight: 400;
+  text-align: center;
+    margin: 40px 0 40px;
+    text-align: center;
 
- p {
+p {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
     color: #ecf0f1;
-    font-family: 'Cherry Swash',cursive;
+    font-family: 'Futura',cursive;
     font-size: 16px;
 }
+
 
 </style>
 
