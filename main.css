@@ -6,28 +6,6 @@ body {
 	text-align: center;
 }
 
-h1 { 
-                color: rgb(204, 0, 0);
-                font-family: futura, sans-serif;
-  font-weight: 400;
-  text-align: center;
-    margin: 40px 0 40px;
-    text-align: center;}
-
-h2 { color: #323232; 
-	font-family: 'helvetica neue', sans-serif; 
-	font-size: 75px; 
-	font-weight: bold; 
-	
-	text-align: center; }
-
-p {
-    width: 100%;
-    text-align: center;
-    color: #ecf0f1;
-    font-family: 'Futura',cursive;
-    font-size: 16px;
-}
 
 a:link {
   text-decoration: none;
