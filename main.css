@@ -52,7 +52,6 @@ h1:link, visited  {
 }
 
 h1:hover,active {
-	text-decoration: underline;
 	color: #da291c;
 }
 .page-title {
