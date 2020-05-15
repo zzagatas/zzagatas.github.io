@@ -36,9 +36,7 @@ font-weight: 350;
 a {
 	text-decoration: none;
 }
-a:hover {
-	text-decoration: underline;
-}
+
 
   h1 { 
   	color: rgb(174,25,30);
