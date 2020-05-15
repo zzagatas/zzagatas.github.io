@@ -46,6 +46,14 @@ font-size:2em;
  margin-bottom: 5px;
 }
 
+h1:link, visited  {
+	text-decoration: none;
+}
+
+h1:hover,active {
+	text-decoration: underline;
+}
+ 
 .page-title:link, visited  {
 	text-decoration: none;
 }
