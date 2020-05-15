@@ -32,6 +32,14 @@ font-weight: 350;
 #list {
 	color: #f5de19;
 }
+ 
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
   h1 { 
   	color: rgb(174,25,30);
  text-align: center;
@@ -45,6 +53,7 @@ h1:link, visited  {
 
 h1:hover,active {
 	text-decoration: underline;
+	color: #da291c;
 }
 .page-title {
 	color: rgb(174,25,30);
