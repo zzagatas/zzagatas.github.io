@@ -1,6 +1,5 @@
 
 head {
-
 	text-align: center;
 }
 
@@ -12,17 +11,16 @@ p {
 color: #fffaf1;
 font-family: 'helvetica neue', sans-serif;
 font-weight: 350; 
-padding: 20px; 
+padding: 12px; 
 }
 
-
   h1 { 
-                color: rgb(204, 0, 0);
-                font-family: futura, sans-serif;
+  color: rgb(204, 0, 0);
+  font-family: futura, sans-serif;
   font-weight: 600;
   text-align: center;
-    margin: 40px 0 40px;
-    text-align: center;
+  margin: 40px 0 40px;
+ text-align: center;
 font-size:2em;}
 
 h2 { color: #323232; 
@@ -34,9 +32,7 @@ h2 { color: #323232;
 	text-align: center; }
 
 
-
 #list {
-
 	color: #f5de19;
 }
 
