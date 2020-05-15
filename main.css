@@ -14,7 +14,6 @@ html, body {
 body {
 	background-color: #2b2b2b;
 	text-align: center;
-	margin: 0;
 }
 
 p {
@@ -53,7 +52,7 @@ h1:link, visited  {
 h1:hover,active {
 	text-decoration: underline;
 }
- 
+
 .page-title:link, visited  {
 	text-decoration: none;
 }
