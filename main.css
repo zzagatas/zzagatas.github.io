@@ -34,14 +34,31 @@ font-weight: 350;
   h1 { 
   	color: rgb(174,25,30);
  text-align: center;
- font-weight: 600;
+ font-weight: 400;
  margin-bottom: 5px;
+ text-decoration: none;
 }
 h1:link, visited  {
 	text-decoration: none;
 }
 
 h1:hover,active {
+	text-decoration: underline;
+}
+.page-title {
+	color: rgb(174,25,30);
+  font-family: futura, sans-serif;
+  font-weight: 400;
+  text-align: center;
+font-size:2em;
+ margin-bottom: 5px;
+ text-decoration: none;
+}
+.page-title:link, visited  {
+	text-decoration: none;
+}
+
+.pagetitle:hover,active {
 	text-decoration: underline;
 }
 h2 { color: #323232; 
@@ -51,21 +68,8 @@ h2 { color: #323232;
 	letter-spacing: -1px; 
 	line-height: 1; 
 	text-align: center; }
-.page-title {
-	color: rgb(174,25,30);
-  font-family: futura, sans-serif;
-  font-weight: 600;
-  text-align: center;
-font-size:2em;
- margin-bottom: 5px;
-}
-.page-title:link, visited  {
-	text-decoration: none;
-}
 
-.pagetitle:hover,active {
-	text-decoration: underline;
-}
+
 h6 {color: #fffaf1;
 font-family: 'helvetica neue', sans-serif;
 font-weight: 500; 
