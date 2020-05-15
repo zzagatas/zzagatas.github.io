@@ -27,13 +27,29 @@ font-family: 'helvetica neue', sans-serif;
 font-weight: 350; 
 }
 
+#list {
+	color: #f5de19;
+}
   h1 { 
   	color: rgb(174,25,30);
  text-align: center;
  font-weight: 600;
  margin-bottom: 5px;
 }
+h1:link, visited  {
+	text-decoration: none;
+}
 
+h1:hover,active {
+	text-decoration: underline;
+}
+h2 { color: #323232; 
+	font-family: 'helvetica neue', sans-serif; 
+	font-size: 75px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 1; 
+	text-align: center; }
 .page-title {
 	color: rgb(174,25,30);
   font-family: futura, sans-serif;
@@ -42,15 +58,6 @@ font-weight: 350;
 font-size:2em;
  margin-bottom: 5px;
 }
-
-h1:link, visited  {
-	text-decoration: none;
-}
-
-h1:hover,active {
-	text-decoration: underline;
-}
-
 .page-title:link, visited  {
 	text-decoration: none;
 }
@@ -58,19 +65,9 @@ h1:hover,active {
 .pagetitle:hover,active {
 	text-decoration: underline;
 }
-
-h2 { color: #323232; 
-	font-family: 'helvetica neue', sans-serif; 
-	font-size: 75px; 
-	font-weight: bold; 
-	letter-spacing: -1px; 
-	line-height: 1; 
-	text-align: center; }
-
-
-#list {
-	color: #f5de19;
+h6 {color: #fffaf1;
+font-family: 'helvetica neue', sans-serif;
+font-weight: 500; 
+padding: 5px; 
+size:16px;
 }
-
-
- 
