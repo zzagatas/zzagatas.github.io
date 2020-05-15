@@ -51,6 +51,7 @@ h1:link, visited  {
 
 h1:hover,active {
 	color: #da291c;
+	text-decoration: underline;
 }
 .page-title {
 	color: rgb(174,25,30);
