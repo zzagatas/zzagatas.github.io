@@ -29,39 +29,46 @@ body {
 
                 </header>
 
-
-
-
 <body>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+
+
+<p>tātad, šie ir mani soctīkliņi:</p>
 <center><p><a href="https://instagram.com/roncijs"> soctīkls I ︎</a></p>
-<p><a href="https://instagram.com/budists""> soctīkls I ︎</a></p>
-<p><a href="https://open.spotify.com/user/oblomovs""> soctīkls I ︎</a></p>
-<p><a href="https://open.spotify.com/user/fc80y6wx8zbigpe6n7eppxqol""> soctīkls I ︎</a></p>
-<p><a href="https://soundcloud.com/zzagatas/tracks""> soctīkls I ︎</a></p>
-<p><a href="https://zzagatas.bandcamp.com""> soctīkls I ︎</a></p>
-<p><a href="https://zelteris.wordpress.com""> soctīkls I ︎</a></p>
-<p><a href="https://burinieks.wordpress.com""> soctīkls I ︎</a></p>
-<p><a href="https://klab.lv/~roncijs""> soctīkls I ︎</a></p>
-<p><a href="https://www.goodreads.com/user/show/18483719-ro""> soctīkls I ︎</a></p>
-<p><a href="https://vsco.co/zzagatas/""> soctīkls I ︎</a></p>
-<p><a href="https://www.youtube.com/user/Rexis95""> soctīkls I ︎</a></p></center>
+<p><a style="soclink" href="https://instagram.com/budists""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://open.spotify.com/user/oblomovs""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://open.spotify.com/user/fc80y6wx8zbigpe6n7eppxqol""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://soundcloud.com/zzagatas/tracks""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://zzagatas.bandcamp.com""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://zelteris.wordpress.com""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://burinieks.wordpress.com""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://klab.lv/~roncijs""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://www.goodreads.com/user/show/18483719-ro""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://vsco.co/zzagatas/""> soctīkls I ︎</a></p>
+<p><a style="soclink" href="https://www.youtube.com/user/Rexis95""> soctīkls I ︎</a></p></center>
+
+<p>un te ir bilžu galerija no codecademy: </p>
+  <div class="gallery">
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss1.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss2.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss3.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss4.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss5.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/moss6.jpg">
+      </figure>
+    </div>
 
 
-
-
-    
 </body>
 
 
@@ -69,6 +76,43 @@ body {
 
 
 <style>
+.soclink:link { 
+    text-decoration: none;
+color: rgb(204, 0, 0);
+}
+
+.soclink:visited {
+    text-decoration: none;
+color: #800000;
+}
+
+.soclink:hover {
+    text-decoration: underline;
+
+}
+
+.soclink: active{
+    text-decoration: none;
+color: #ff2400;
+}
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 2px;
+  border: 5px solid #2b2b2b;
+}
+
+.gallery-item .thumbnail {
+}
+
+
   nav {
     margin: 27px auto 0;
     position: relative;
