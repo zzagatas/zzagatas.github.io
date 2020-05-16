@@ -120,5 +120,5 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  width: 70%;
+  width: 40%;
 }
