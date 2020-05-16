@@ -12,61 +12,47 @@
 
     <body>
 
-<div data-tip="Ievadi 'roncijs'">
-    <input type="login" name="bb" maxlength="128" placeholder="do it. try it.""></div>
+<div class="tooltip">
+    <input type="login" placeholder="pasaki, kā ir"/>
+
+  <span class="tooltiptext">Tooltip text</span>
+</div>
 
 </body>
 
 
 <Style>
-[data-tip] {
-  position:relative;
-}
-[data-tip]:before {
-  content:'';
-  /* hides the tooltip when not hovered */
-  display:none;
-  content:'';
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #2b2b2b; 
-  position:relative;
-  top:30px;
-  left:35px;
-  z-index:8;
-  font-size:0;
-  line-height:0;
-  width:0;
-  height:0;
-}
-[data-tip]:after {
-  display:none;
-  content:attr(data-tip);
-  position:absolute;
-  top:4em;
-  left: 4em;
-  background:#2b2b2b;
-  color:#323232;
-  z-index:1;
-  height:18px;
-  line-height:18px;
-  white-space:nowrap;
-  word-wrap:normal;
-  letter-spacing: -1px; 
-  color: #323232; 
-  font-size: 75px;
-  font-family: 'helvetica neue', sans-serif; 
-  font-weight: bold;  
-  margin: auto;
-  transition: 3s ease-in-out;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  transition: opacity 5s;
 }
 
-[data-tip]:hover {
-  display:inline; 
-  transition: 3s ease-in-out;
-  opacity: 1;}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 350%;
+  left: 50%;
+  margin-left: -60px;
+  transition: opacity 5s;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 5s;
+}
 
-[data-tip]:active:after {
-  display:inline; }
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 5s;
+}
+
 </Style>
 </html>
