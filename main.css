@@ -132,7 +132,6 @@ input[type=text]:focus {
 input[type=login] {
   color: #2b2b2b;
   width: 100px;
-  box-sizing: border-box;
   border: 3px solid #323232; 
   border-radius: 6px;
   padding: 12px 6px 12px 6px;
@@ -145,12 +144,6 @@ font-family: helvetica neue;
 }
 
 input[type=login]:focus {
-  color: #2b2b2b;
-  width: 300px;
-  transition: width 0.3s ease-in-out;
-}
-
-input[type=login]:hover {
   color: #2b2b2b;
   width: 300px;
   transition: width 0.3s ease-in-out;
