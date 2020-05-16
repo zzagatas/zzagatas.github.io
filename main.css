@@ -36,7 +36,25 @@ font-weight: 350;
 a {
 	text-decoration: none;
 }
+.soclink:link { 
+    text-decoration: none;
+color: rgb(174,25,30);
+}
 
+.soclink:visited {
+    text-decoration: none;
+color: #800000;
+}
+
+.soclink:hover {
+    text-decoration: underline;
+    color: #da291c;
+}
+
+.soclink: active{
+    text-decoration: none;
+color: #da291c;
+}
 
   h1 { 
   	color: rgb(174,25,30);
