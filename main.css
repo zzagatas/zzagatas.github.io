@@ -132,6 +132,8 @@ input[type=text]:focus {
 input[type=login] {
   color: #2b2b2b;
   width: 100px;
+    border: 3px solid #323232; 
+  border-radius: 6px;
   box-sizing: border-box;
   font-size: 16px;
   background-color: #fbfbfb;
