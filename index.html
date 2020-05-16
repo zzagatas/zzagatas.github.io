@@ -13,7 +13,7 @@
     <body>
 
 <div class="tooltip">
-    <figure class="ugh"><input type="login" placeholder=""""/>
+    <figure class="ugh"><input type="login" placeholder=""!""/>
 </figure>
   <span class="tooltiptext">un pasaki, kā ir</span>
 </div>
@@ -53,6 +53,7 @@
   line-height: 1; 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
+   transition: 0.1s ease-in-out;
 }
 
 .tooltip:hover .tooltiptext {
