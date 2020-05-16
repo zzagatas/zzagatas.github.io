@@ -120,7 +120,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  width: 40%;
+  width: 300px;
 }
 
 thead {
