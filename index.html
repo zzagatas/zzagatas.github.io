@@ -15,61 +15,41 @@
 
 
 <form>
-  <input type="login" name="#" placeholder="Par.. ">
+  <input type="login" name="#" maxlength="128" placeholder="Par.. ">
 </form>
 
 <p></p>
-<div class="container-login">
-    <div></div>
-        <div class="middle-login">
-    <div class="text-login">SARUNAS
+<div class="form-item message-error" data-tooltip="SARUNAS
         KURAS
         NEKAD
-        NENOTIKS </div>
-  </div> </a></div>
+        NENOTIKS"></div>
 
 
 </body>
 
 <Style>
- .container-walton {
+ .form-item {
   position: relative;
-  width: 50%;
-    transition: 1s ease-in-out;
 }
-
-                 .container-walton figure img {
-          transition: 1.01s ease-in-out;
-          opacity: 1;
-}
-        .container-walton figure:hover img {
-          opacity: 0.5; 
-          filter: alpha(opacity=90);
-          transition: 1s ease-in-out;
-}
-.container-walton :hover .middle-walton {
-  opacity: 1;
-    transition: 1s ease-in-out;
-}
-
-.middle-walton {
-  transition: 1.01s ease-in-out;
-  opacity: 0.7;
+.message-error:after {
+  content: attr(data-tooltip);
   position: absolute;
-  top: 45%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(50%, -50%);
-  text-align: center;
-}
-.text-walton {
-  background-color: #2b2b2b;
+  top: 0;
+  left: 10%;
+  display: none;
+  padding: 1em 2em;
   color: white;
-  font-size: 16px;
-  padding: 16px 7px;
-  font-family: helvetica neue;
-  opacity: 1;
-  transition: 1.01s ease-in-out;
+  font-family:helvetica neue;
+}
+
+.message-error:hover:after {
+  display: block;
+  -webkit-animation: showTooltip 0.35s ease-in-out;
+  -moz-animation: showTooltip 0.35s ease-in-out;
+  animation: showTooltip 0.35s ease-in-out;
+}
+.message-error:after {
+  background-color: #2b2b2b;
 }
 </Style>
 </html>

@@ -143,9 +143,16 @@ input[type=login] {
   transition: width 0.3s ease-in-out;
 }
 
-input[type=login]focus:hover {
+input[type=login]:focus {
   color: #2b2b2b;
   width: 300px;
+  transition: width 0.3s ease-in-out;
+}
+
+input[type=login]:hover {
+  color: #2b2b2b;
+  width: 300px;
+  transition: width 0.3s ease-in-out;
 }
 
 thead {
