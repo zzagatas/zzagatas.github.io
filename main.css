@@ -104,3 +104,21 @@ font-size: 16px;
 margin-top: 20px;
 margin-bottom: 10px;
 }
+
+input[type=text] {
+  width: 200px;
+  box-sizing: border-box;
+  border: 3px solid #2b2b2b;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fbfbfb;
+  background-image: url('search.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 1.3s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 70%;
+}
