@@ -122,3 +122,8 @@ input[type=text] {
 input[type=text]:focus {
   width: 40%;
 }
+
+thead {
+	font-size: 20px;
+
+}
