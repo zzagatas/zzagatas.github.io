@@ -12,17 +12,17 @@
 
     <body>
     
-
+<div class="form-item message-error" data-tooltip="SARUNAS
+        KURAS
+        NEKAD
+        NENOTIKS"></div>
 
 <form>
   <input type="login" name="#" maxlength="128" placeholder="Par.. ">
 </form>
 
 <p></p>
-<div class="form-item message-error" data-tooltip="SARUNAS
-        KURAS
-        NEKAD
-        NENOTIKS"></div>
+
 </body>
 
 <Style>
@@ -32,12 +32,13 @@
 .message-error:after {
   content: attr(data-tooltip);
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 10%;
   display: none;
   padding: 1em 2em;
   color: white;
   font-family:helvetica neue;
+  font-size:24px;
 }
 
 .message-error:hover:after {
