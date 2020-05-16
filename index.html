@@ -12,43 +12,57 @@
 
     <body>
     
-<div class="form-item message-error" data-tooltip="SARUNAS
-        KURAS
-        NEKAD
-        NENOTIKS"></div>
+
 
 <form>
   <input type="login" name="#" maxlength="128" placeholder="Par.. ">
 </form>
 
-<p></p>
+<span class="tooltiptext">ievadi vārdu</span>
+
+
 
 </body>
 
 <Style>
- .form-item {
+.login {
   position: relative;
-}
-.message-error:after {
-  content: attr(data-tooltip);
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  display: none;
-  padding: 1em 2em;
-  color: white;
-  font-family:helvetica neue;
-  font-size:24px;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 
-.message-error:hover:after {
-  display: block;
-  -webkit-animation: showTooltip 0.35s ease-in-out;
-  -moz-animation: showTooltip 0.35s ease-in-out;
-  animation: showTooltip 0.35s ease-in-out;
-}
-.message-error:after {
+.login .tooltiptext {
+  visibility: hidden;
+  width: 120px;
   background-color: #2b2b2b;
+  color: #fbfbfb;
+  font-size:36px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -600%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
+
+.login .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-bottom: -50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.login:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.6;
 </Style>
 </html>
