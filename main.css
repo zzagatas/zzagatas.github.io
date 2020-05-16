@@ -33,6 +33,10 @@ font-weight: 350;
 	color: #f5de19;
 }
  
+#greetings {
+  margin-top:-20px;
+}
+
 a {
 	text-decoration: none;
 }
