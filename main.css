@@ -141,7 +141,7 @@ input[type=login] {
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   transition: width 0.3s ease-in-out;
-
+font-family: helvetica neue;
 }
 
 input[type=login]:focus {
