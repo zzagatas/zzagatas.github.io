@@ -141,6 +141,7 @@ input[type=login] {
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   transition: width 0.3s ease-in-out;
+  
 }
 
 input[type=login]:focus {
